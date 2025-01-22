@@ -69,8 +69,6 @@ int main() {
   Insert(10);  // Insert element 10
   Insert(20);  // Insert element 20
   Insert(30);  // Insert element 30
-  Insert(40);  // Insert element 40
-  Insert(50);  // Insert element 50
 
   Display();  // Display the elements in the array
 
@@ -81,14 +79,3 @@ int main() {
   return 0;
 }
 
-/****************
-Tarea 1 es borrar
-
-gVect : 10, 20, 30
-
-Delete(20)
-Se supone que primero deben buscar el elemento Search()
-
-gVect : 10, 30
-
-*****************/
