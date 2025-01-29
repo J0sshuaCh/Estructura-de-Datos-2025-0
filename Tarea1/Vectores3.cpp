@@ -9,7 +9,7 @@ using namespace std;
 
 struct Vector
 {
-  int*m_pVect, // Pointer to the buffer
+  int*m_pVect= nullptr, // Pointer to the buffer
     m_nCount, // Control how many elements are actually used
     m_nMax, // Control how many are allocated as maximum
     m_nDelta; // To control the growing
@@ -44,7 +44,6 @@ void Display(Vector *pThis)
   cout << endl;
   cout << "Cantidad de elementos almacenados:" << pThis->m_nCount <<endl;
 }
-
 void Eliminar(Vector *pThis, int elem) {
   int index = -1;
   for (int i = 0; i < pThis->m_nCount; i++) {
@@ -81,5 +80,3 @@ int main(int argc, char *argv[]) {
   Display(&myVect);
   return 0;
 }
-
-
